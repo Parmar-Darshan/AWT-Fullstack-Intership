@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        #wt:hover {
+            background-color: red;
+            border-radius: 5px;
+            display: inline-block;
+
+        }
+        div{
+            display: none;
+            
+        }
+        #wt:hover+ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul id="#wt">
+            <li>google
+                <ul>
+                    <li>Gmail
+                        <ul>
+                            <li>Sign UP</li>
+                            <li>sign In</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Facebook</li>
+        </ul>
+    </div>
+</body>
+
+</html>
