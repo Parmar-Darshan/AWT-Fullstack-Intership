@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w2 {
+            color: rgba(153, 13, 104, 0.892);
+            background-color: rgb(4, 201, 40);
+            width: 420px;
+            height: 25px;
+            /* margin: 20px; */
+            padding: 10px;
+            text-align: center;
+            border: 5px solid rgba(50, 12, 44, 0.877);
+            line-height: 28px;
+
+        }
+
+        #num1,
+        #num2 {
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            border: 5px solid blue;
+
+
+        }
+
+        button {
+            background-color: rgb(24, 169, 24);
+            color: rgb(251, 249, 249);
+            text-align: center;
+            border: 5px solid black;
+
+        }
+
+        #ans {
+            width: 100px;
+            height: 70px;
+            border: 4px solid rgb(255, 0, 0);
+        }
+
+        .r3 {
+            width: 450px;
+            height: 500px;
+            border: 5px solid rgb(53, 49, 49);
+            padding: 30px;
+            margin-left: 350px;
+            background-color: rgb(12, 237, 237);
+        
+        }
+        .r3:hover{
+            transition: 15s;
+            transform: rotate(360deg);
+        }
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/image-colorful-galaxy-sky-generative-ai_791316-9864.jpg?w=996");
+        }
+    </style>
+</head>
+
+<body>
+        <div class="r3">
+            <h1 class="w2"> Enter the First number :</h1>
+            <input type="number" id="num1">
+            <h1 class="w2"> Enter the Second number :</h1>
+            <input type="number" id="num2"><br><br>
+            </br>
+
+            <button type="button" onclick=fun1()>Addition (+)</button>
+            <button type="button" onclick=fun2()>Subtraction (-)</button>
+            <button type="button" onclick=fun3()>Multiplication (*)</button>
+            <button type="button" onclick=fun4()>Division (/)</button>
+            <h1 class="w2"> Answer is :</h1>
+            <button id="ans"></button>
+
+
+
+            <script>
+                function fun1() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 + n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+                function fun2() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 - n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+                function fun3() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 * n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+                function fun4() {
+                    let n1 = Number(document.getElementById("num1").value);
+                    let n2 = Number(document.getElementById("num2").value);
+                    n3 = n1 / n2;
+                    document.getElementById("ans").innerHTML = n3;
+                }
+            </script>
+        </div>
+</body>
+
+</html>

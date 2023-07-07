@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+            background-color: rgb(0, 255, 170);
+            align-items: center;
+        }
+
+        h1 {
+            align-items: center;
+        }
+
+        button {
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+
+        .box:hover,
+        button:hover,
+        li:hover {
+            transform: rotate(360deg);
+            transition-duration: 15s;
+        }
+
+
+        .box {
+            background-color: skyblue;
+            border: 2px solid black;
+            padding: 20px 50px;
+        }
+
+        .op {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        #ans {
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="box">
+        <h1>Calculator Using JS</h1>
+        <hr>
+        <p>Enter First Value:</p>
+        <input type="number" id="v1" placeholder="ENPUT FIRST VALUE">
+
+        <p>Enter First Value:</p>
+        <input type="number" id="v2" placeholder="ENPUT SECOND VALUE">
+
+        <hr>
+
+        <p>OPERATION:</p>
+
+        <div class="op">
+            <ol type="I">
+
+                <li><button onclick="add()">ADD[+]</button> </li><br>
+                <li><button onclick="sub()">SUBSTRACT [-]</button></li><br>
+                <li><button onclick="mul()">MULTIPLY [*]</button></li><br>
+                <li><button onclick="div()">DIVIDE [/]</button> </li>
+
+            </ol>
+        </div>
+        <hr>
+
+        <p>Answer:</p>
+        <fieldset>
+            <p id="ans"></p>
+        </fieldset> 
+
+    </div>
+
+    <script>
+
+        function add() {
+            let x = Number(document.getElementById("v1").value);
+            let y = Number(document.getElementById("v2").value);
+            let z = x + y;
+            document.getElementById("ans").innerHTML = z;
+        }
+        function sub() {
+            let x = Number(document.getElementById("v1").value);
+            let y = Number(document.getElementById("v2").   value);
+            let z = x - y;
+            document.getElementById("ans").innerHTML = z;
+        }
+        function mul() {
+            let x = Number(document.getElementById("v1").value);
+            let y = Number(document.getElementById("v2").value);
+            let z = x * y;
+            document.getElementById("ans").innerHTML = z;
+        }
+        function div() {
+            let x = Number(document.getElementById("v1").value);
+            let y = Number(document.getElementById("v2").value);
+            let z = x / y;
+            document.getElementById("ans").innerHTML = z;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
